@@ -15,7 +15,7 @@ Markdown customization plugin:
 
 ###@ Machine Translation
 Machine translation language: ja-JP
-Machine translation model: pgt-5.4-nano
+Machine translation model: gpt-5.4-nano
 
 ###@ Proofread
 Proofreader(s):
