@@ -144,12 +144,12 @@ jobs:
       - name: Define target branch name with MT_X
         if: ${{ env.LANG != '' && env.MT_X != '' }}
         run: |
-          MAIN_SHA="TZ_${{ env.LANG }}_${{ env.MT_X }}_${{ github.sha }}"
+          MAIN_SHA="TZ5_${{ env.LANG }}_${{ env.MT_X }}_${{ github.sha }}"
           echo "TARGET_BRANCH_NAME=$MAIN_SHA" >> $GITHUB_ENV
       - name: Define target branch name without MT_X
         if: ${{ env.LANG != '' && env.MT_X == '' }}
         run: |
-          MAIN_SHA="TZ_${{ env.LANG }}_${{ github.sha }}"
+          MAIN_SHA="TZ5_${{ env.LANG }}_${{ github.sha }}"
           echo "TARGET_BRANCH_NAME=$MAIN_SHA" >> $GITHUB_ENV
 
       # STEP 5: Check if the target branch exists
